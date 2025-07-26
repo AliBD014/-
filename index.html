@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Priority To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Priority To-Do List</h1>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter your task..." />
+      <select id="prioritySelect">
+        <option value="red">🔴 Red – So important</option>
+        <option value="yellow">🟡 Yellow – I have limited time</option>
+        <option value="green">🟢 Green – I have time for it</option>
+        <option value="orange">🟠 Orange – Can be done if I want</option>
+      </select>
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
